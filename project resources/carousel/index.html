@@ -7,7 +7,17 @@
     <title>Carousel</title>
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
-
+    <style type="text/css">
+    .team-carousel
+    {
+        text-align: center;
+    }
+    .team-member-image-container
+    {
+        background: #333;
+        clip-path: polygon(50% 5%,100% 25%,100% 75%,50% 95%,0% 75%, 0% 25%);
+    }
+    </style>
 
     <script
   src="https://code.jquery.com/jquery-3.6.0.js"
@@ -80,7 +90,9 @@
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             items:3,
-            loop:true
+            loop:true,
+            nav:true,
+            margin:20
         });
     });
     </script>
