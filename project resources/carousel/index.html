@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
+
+
+
+
+    
+
+
 </head>
 <body>
 
-    
-    
+    <div class="team-carousel">
+        <div class="team-item">
+            <div class="team-member-image-container">
+                <img src="/project resources/hexagon/img/1.jpg" alt="">
+            </div>
+            <div class="team-member-content">
+                <h3 class="member-name">John</h3>
+                <p class="position">Specialist</p>
+            </div>
+        </div>
+        <div class="team-item">
+            <div class="team-member-image-container">
+                <img src="/project resources/hexagon/img/1.jpg" alt="">
+            </div>
+            <div class="team-member-content">
+                <h3 class="member-name">John</h3>
+                <p class="position">Specialist</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+    });
+    </script>
 </body>
 </html>
